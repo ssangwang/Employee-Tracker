@@ -1,9 +1,7 @@
-SELECT
-  department.department_name as name
+SELECT *
 FROM employee_role
-JOIN department ON employee_role.department_id = department.department_name;
+JOIN department ON employee_role.department_id = department.id;
 
-SELECT
-  employee_role.id as name
+SELECT * 
 FROM employee
 JOIN employee_role ON employee.role_id = employee_role.id;
